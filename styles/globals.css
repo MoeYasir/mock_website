@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+    overflow-x: hidden;
+  }
+}
+
+.background-image {
+  will-change: transform;
+}
+
+/* This helps the text animation look smooth */
+.location-text, .title-text, .description-text {
+    will-change: transform, opacity;
+}
